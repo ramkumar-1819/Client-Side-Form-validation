@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href='/style.css'>
+    <script src='/app.js'></script>
+</head>
+<body>
+    <!--Create a form to store employee details. Fields are Name, Gender, date of joining, Designation, CTC per year, PF, ESI, Tax-->
+    <form class="employee-details" onsubmit="return validation()">
+        <!--Employee Name Field-->
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <!--Employee Gender Field-->
+        <div>Gender</div>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
+        </div>
+        <!--Date of Joining-->
+        <label for="joining-date">Date of Joining</label>
+        <input type="date" id="joining-date" max="2021-06-02" required>
+        <!--Designation-->
+        <label for="designation">Designation</label>
+        <select name="designation" id="designation">
+            <option value="B.E/B.Tech">B.E/B.Tech</option>
+            <option value="BSC">BSC</option>
+            <option value="MSC">MSC</option>
+            <option value="M.E/M.Tech">M.E/M.Tech</option>
+            <option value="B Arch/M Arch">B Arch/M Arch</option>
+        </select>
+        <!--CTC-->
+        <label for="ctc">CTC per year</label>
+        <input type="text" placeholder="8LPA" id="ctc" required>
+        <!--PF-->
+        <label for="pf">Enter the PF</label>
+        <input type="number" placeholder="8000000" id="pf" required>
+        <!--ESI-->
+        <label for="esi">Enter the ESI</label>
+        <input type="number" placeholder="400000" id="esi" required>
+        <!--Tax-->
+        <label for="pf">Enter the Percentage TAX</label>
+        <input type="number" placeholder="14.5" id="pf" required>
+        <!--Submitting-->
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
