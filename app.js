@@ -1,3 +1,28 @@
+//When page load we initially hidding the label field
+const inputs=document.getElementsByClassName('inputfield');
+for(let i=0;i<inputs.length;i++){
+        if(inputs[i].getAttribute('placeholder') && inputs[i].value===""){
+            document.getElementsByClassName('labelname')[i].style.display="none";
+        }
+}
+//when we come out of I/P field label should be on the border if we enter a I/P value else label should be hidded
+function getBlured(input){
+    for(let i=0;i<inputs.length;i++){
+        if(inputs[i]===input){
+            if(inputs[i].getAttribute('placeholder') && inputs[i].value===""){
+                document.getElementsByClassName('labelname')[i].style.display="none";
+            }
+        }
+    }
+}
+//when fousing on I/P placeholder should be hidded and label should be on the border
+function getFocused(input){
+    for(let i=0;i<inputs.length;i++){
+        if(inputs[i]===input){
+            document.getElementsByClassName('labelname')[i].style.display="block";
+        }
+    }
+}
 //client side validation
 function validation(){
     const name=document.getElementById("name");//user field

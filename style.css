@@ -12,21 +12,54 @@ h1{
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    font-family:sans-serif;
     justify-content: space-evenly;
     height: auto;
-    margin: 25px auto;
+    margin: 70px auto;
     padding-left: 5px;
     width: 500px;
 }
-
-.employee-details>label,div:nth-child(4){
+.container{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.inputfield{
+    width: 300px;
+    padding:8px;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+input:focus,select:focus{
+    border-color:#00bfff;
+}
+input,select{
+    border: 1px solid black;
+    outline: none;
+}
+.labelname{
+    display: block;
+    font-size: small;
+    position: absolute;
+    background-color: white;
+    top:-7px;
+    left:10px;
+    font-weight: bold;
+}
+.employee-details>label,div:nth-child(3){
     display: block;
     font-weight: bold;
     margin-top: 15px;
 }
-.employee-details>input,select{
-    height: 20px;
+.employee-details input:not(#male,#female),select{
+    height: 30px;
     width: 300px;
+}
+.notInput{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 button[type="submit"]{
     cursor: pointer;
