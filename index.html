@@ -11,8 +11,9 @@
 <body>
     <!--Create a form to store employee details. Fields are Name, Gender, date of joining, Designation, CTC per year, PF, ESI, Tax-->
     <form class="employee-details" onsubmit="return validation()">
+        <h1>Employee Detail Form</h1>
         <!--Employee Name Field-->
-        <label for="name">Name</label>
+        <label for="name" >Name</label>
         <input type="text" id="name" required>
         <!--Employee Gender Field-->
         <div>Gender</div>
@@ -28,26 +29,26 @@
         <!--Designation-->
         <label for="designation">Designation</label>
         <select name="designation" id="designation">
-            <option value="B.E/B.Tech">B.E/B.Tech</option>
-            <option value="BSC">BSC</option>
-            <option value="MSC">MSC</option>
-            <option value="M.E/M.Tech">M.E/M.Tech</option>
-            <option value="B Arch/M Arch">B Arch/M Arch</option>
+            <option value="Software Developer">Software Developer</option>
+            <option value="Automation Tester">Automation Tester</option>
+            <option value="FrontEnd Developer">FrontEnd Developer</option>
+            <option value="BackEnd Developer">BackEnd Developer</option>
+            <option value="Java Developer">Java Developer</option>
         </select>
         <!--CTC-->
         <label for="ctc">CTC per year</label>
-        <input type="text" placeholder="8LPA" id="ctc" required>
+        <input type="text"  id="ctc" required>
         <!--PF-->
         <label for="pf">Enter the PF</label>
-        <input type="number" placeholder="8000000" id="pf" required>
+        <input type="number"id="pf" required>
         <!--ESI-->
         <label for="esi">Enter the ESI</label>
-        <input type="number" placeholder="400000" id="esi" required>
+        <input type="number" id="esi" required>
         <!--Tax-->
         <label for="pf">Enter the Percentage TAX</label>
-        <input type="number" placeholder="14.5" id="pf" required>
+        <input type="number"id="pf" required>
         <!--Submitting-->
-        <input type="submit" value="SUBMIT">
+        <button type="submit">SUMBIT</button>
     </form>
 </body>
 </html>
